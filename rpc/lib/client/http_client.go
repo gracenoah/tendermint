@@ -124,7 +124,21 @@ var _ JSONRPCCaller = (*JSONRPCRequestBatch)(nil)
 
 // NewJSONRPCClient returns a JSONRPCClient pointed at the given address.
 func NewJSONRPCClient(remote string) *JSONRPCClient {
-	address, client := makeHTTPClient(remote)
+	return NewJSONRPCClientWithHTTPClient(remote, nil)
+}
+
+// NewJSONRPCClient returns a JSONRPCClient pointed at the given address using a custom http client
+func NewJSONRPCClientWithHTTPClient(remote string, clientOverride *http.Client) *JSONRPCClient {
+	var address string
+	var client *http.Client
+
+	if clientOverride == nil {
+		address, client = makeHTTPClient(remote)
+	} else {
+		address = remote
+		client = clientOverride
+	}
+
 	return &JSONRPCClient{
 		address: address,
 		client:  client,
