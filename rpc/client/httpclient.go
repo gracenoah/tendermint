@@ -36,8 +36,9 @@ the JSON RPC specification (https://www.jsonrpc.org/specification#batch). See
 the example for more details.
 */
 type HTTP struct {
-	remote string
-	rpc    *rpcclient.JSONRPCClient
+	clientOpts []func(*rpcclient.JSONRPCClient)
+	remote     string
+	rpc        *rpcclient.JSONRPCClient
 
 	*baseRPCClient
 	*WSEvents
@@ -82,20 +83,30 @@ var _ rpcClient = (*baseRPCClient)(nil)
 //-----------------------------------------------------------------------------
 // HTTP
 
+// HTTPClientWithJSONRPCClientOpt allows passing through an option to JSONRPCClient
+func HTTPClientWithJSONRPCClientOpt(clientOpts ...func(*rpcclient.JSONRPCClient)) func(*HTTP) {
+	return func(h *HTTP) {
+		h.clientOpts = clientOpts
+	}
+}
+
 // NewHTTP takes a remote endpoint in the form <protocol>://<host>:<port> and
 // the websocket path (which always seems to be "/websocket")
-func NewHTTP(remote, wsEndpoint string, clientOpts ...func(*rpcclient.JSONRPCClient)) *HTTP {
-	rc := rpcclient.NewJSONRPCClient(remote, clientOpts...)
+func NewHTTP(remote, wsEndpoint string, opts ...func(*HTTP)) *HTTP {
+	h := &HTTP{
+		remote: remote,
+	}
+	for _, opt := range opts {
+		opt(h)
+	}
+	rc := rpcclient.NewJSONRPCClient(remote, h.clientOpts...)
 	cdc := rc.Codec()
 	ctypes.RegisterAmino(cdc)
 	rc.SetCodec(cdc)
-
-	return &HTTP{
-		rpc:           rc,
-		remote:        remote,
-		baseRPCClient: &baseRPCClient{caller: rc},
-		WSEvents:      newWSEvents(cdc, remote, wsEndpoint),
-	}
+	h.rpc = rc
+	h.baseRPCClient = &baseRPCClient{caller: rc}
+	h.WSEvents = newWSEvents(cdc, remote, wsEndpoint)
+	return h
 }
 
 var _ Client = (*HTTP)(nil)
