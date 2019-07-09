@@ -121,15 +121,30 @@ type JSONRPCCaller interface {
 var _ JSONRPCCaller = (*JSONRPCClient)(nil)
 var _ JSONRPCCaller = (*JSONRPCRequestBatch)(nil)
 
-// NewJSONRPCClient returns a JSONRPCClient pointed at the given address.
-func NewJSONRPCClient(remote string) *JSONRPCClient {
-	address, client := makeHTTPClient(remote)
-	return &JSONRPCClient{
-		address: address,
-		client:  client,
-		id:      types.JSONRPCStringID("jsonrpc-client-" + cmn.RandStr(8)),
-		cdc:     amino.NewCodec(),
+// JSONRPCClientWithHTTPClient is an option to NewJSONRPCClient for using a custom http client
+func JSONRPCClientWithHTTPClient(client *http.Client) func(*JSONRPCClient) {
+	return func(j *JSONRPCClient) {
+		j.client = client
 	}
+}
+
+// NewJSONRPCClient returns a JSONRPCClient pointed at the given address.
+func NewJSONRPCClient(remote string, opts ...func(*JSONRPCClient)) *JSONRPCClient {
+	j := &JSONRPCClient{
+		id:  types.JSONRPCStringID("jsonrpc-client-" + cmn.RandStr(8)),
+		cdc: amino.NewCodec(),
+	}
+	for _, opt := range opts {
+		opt(j)
+	}
+	if j.client == nil {
+		address, client := makeHTTPClient(remote)
+		j.address = address
+		j.client = client
+	} else {
+		j.address = remote
+	}
+	return j
 }
 
 // Call will send the request for the given method through to the RPC endpoint

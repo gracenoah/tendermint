@@ -15,6 +15,7 @@ import (
 	cmn "github.com/tendermint/tendermint/libs/common"
 	"github.com/tendermint/tendermint/rpc/client"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpcclient "github.com/tendermint/tendermint/rpc/lib/client"
 	rpctest "github.com/tendermint/tendermint/rpc/test"
 	"github.com/tendermint/tendermint/types"
 )
@@ -22,6 +23,11 @@ import (
 func getHTTPClient() *client.HTTP {
 	rpcAddr := rpctest.GetConfig().RPC.ListenAddress
 	return client.NewHTTP(rpcAddr, "/websocket")
+}
+
+func getHTTPClientCustom() *client.HTTP {
+	rpcAddr := rpctest.GetConfig().RPC.ListenAddress
+	return client.NewHTTP(rpcAddr, "/websocket", rpcclient.JSONRPCClientWithHTTPClient(http.DefaultClient))
 }
 
 func getLocalClient() *client.Local {
