@@ -26,7 +26,7 @@ func getHTTPClient() *client.HTTP {
 }
 
 func getHTTPClientCustom() *client.HTTP {
-	rpcAddr := rpctest.GetConfig().RPC.ListenAddress
+	rpcAddr := strings.Replace(rpctest.GetConfig().RPC.ListenAddress, "tcp", "http", -1)
 	return client.NewHTTP(rpcAddr, "/websocket", client.HTTPClientWithJSONRPCClientOpt(rpcclient.JSONRPCClientWithHTTPClient(http.DefaultClient)))
 }
 
@@ -39,6 +39,7 @@ func GetClients() []client.Client {
 	return []client.Client{
 		getHTTPClient(),
 		getLocalClient(),
+		getHTTPClientCustom(),
 	}
 }
 
