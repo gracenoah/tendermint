@@ -2,6 +2,7 @@ package client
 
 import (
 	"context"
+	"net/http"
 	"strings"
 	"sync"
 	"time"
@@ -39,8 +40,8 @@ type HTTP struct {
 
 // NewHTTP takes a remote endpoint in the form tcp://<host>:<port>
 // and the websocket path (which always seems to be "/websocket")
-func NewHTTP(remote, wsEndpoint string) *HTTP {
-	rc := rpcclient.NewJSONRPCClient(remote)
+func NewHTTP(remote, wsEndpoint string, customClient *http.Client) *HTTP {
+	rc := rpcclient.NewJSONRPCClient(remote, customClient)
 	cdc := rc.Codec()
 	ctypes.RegisterAmino(cdc)
 	rc.SetCodec(cdc)

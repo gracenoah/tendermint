@@ -91,8 +91,11 @@ type JSONRPCClient struct {
 }
 
 // NewJSONRPCClient returns a JSONRPCClient pointed at the given address.
-func NewJSONRPCClient(remote string) *JSONRPCClient {
+func NewJSONRPCClient(remote string, customClient *http.Client) *JSONRPCClient {
 	address, client := makeHTTPClient(remote)
+	if customClient != nil {
+		client = customClient
+	}
 	return &JSONRPCClient{
 		address: address,
 		client:  client,
