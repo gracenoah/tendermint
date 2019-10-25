@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gogo/protobuf/proto"
+	"github.com/gracenoah/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 
 	cmn "github.com/gracenoah/tendermint/libs/common"

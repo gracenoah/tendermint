@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"encoding/json"
 
-	"github.com/gogo/protobuf/jsonpb"
+	"github.com/gracenoah/protobuf/jsonpb"
 )
 
 //---------------------------------------------------------------------------

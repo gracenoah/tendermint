@@ -6,8 +6,8 @@ package common
 import (
 	bytes "bytes"
 	fmt "fmt"
-	_ "github.com/gogo/protobuf/gogoproto"
-	proto "github.com/gogo/protobuf/proto"
+	_ "github.com/gracenoah/protobuf/gogoproto"
+	proto "github.com/gracenoah/protobuf/proto"
 	golang_proto "github.com/golang/protobuf/proto"
 	io "io"
 	math "math"
