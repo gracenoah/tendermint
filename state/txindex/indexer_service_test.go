@@ -7,11 +7,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/state/txindex/kv"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/gracenoah/tendermint/abci/types"
+	"github.com/gracenoah/tendermint/libs/log"
+	"github.com/gracenoah/tendermint/state/txindex"
+	"github.com/gracenoah/tendermint/state/txindex/kv"
+	"github.com/gracenoah/tendermint/types"
 	db "github.com/tendermint/tm-db"
 )
 

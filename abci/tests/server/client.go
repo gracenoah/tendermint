@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	abcicli "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/types"
-	cmn "github.com/tendermint/tendermint/libs/common"
+	abcicli "github.com/gracenoah/tendermint/abci/client"
+	"github.com/gracenoah/tendermint/abci/types"
+	cmn "github.com/gracenoah/tendermint/libs/common"
 )
 
 func InitChain(client abcicli.Client) error {

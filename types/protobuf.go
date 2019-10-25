@@ -5,10 +5,10 @@ import (
 	"reflect"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/secp256k1"
+	abci "github.com/gracenoah/tendermint/abci/types"
+	"github.com/gracenoah/tendermint/crypto"
+	"github.com/gracenoah/tendermint/crypto/ed25519"
+	"github.com/gracenoah/tendermint/crypto/secp256k1"
 )
 
 //-------------------------------------------------------

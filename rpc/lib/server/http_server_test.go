@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/gracenoah/tendermint/libs/log"
 )
 
 func TestMaxOpenConnections(t *testing.T) {

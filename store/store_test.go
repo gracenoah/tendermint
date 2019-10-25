@@ -15,12 +15,12 @@ import (
 	db "github.com/tendermint/tm-db"
 	dbm "github.com/tendermint/tm-db"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	sm "github.com/tendermint/tendermint/state"
+	cfg "github.com/gracenoah/tendermint/config"
+	"github.com/gracenoah/tendermint/libs/log"
+	sm "github.com/gracenoah/tendermint/state"
 
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	"github.com/gracenoah/tendermint/types"
+	tmtime "github.com/gracenoah/tendermint/types/time"
 )
 
 // A cleanupFunc cleans up any config / test files created for a particular

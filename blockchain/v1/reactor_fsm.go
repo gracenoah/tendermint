@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	"github.com/gracenoah/tendermint/libs/log"
+	"github.com/gracenoah/tendermint/p2p"
+	"github.com/gracenoah/tendermint/types"
 )
 
 // Blockchain Reactor State

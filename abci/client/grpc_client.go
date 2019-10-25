@@ -9,8 +9,8 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	"github.com/tendermint/tendermint/abci/types"
-	cmn "github.com/tendermint/tendermint/libs/common"
+	"github.com/gracenoah/tendermint/abci/types"
+	cmn "github.com/gracenoah/tendermint/libs/common"
 )
 
 var _ Client = (*grpcClient)(nil)

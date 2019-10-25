@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	log "github.com/tendermint/tendermint/libs/log"
-	lerr "github.com/tendermint/tendermint/lite/errors"
-	"github.com/tendermint/tendermint/types"
+	log "github.com/gracenoah/tendermint/libs/log"
+	lerr "github.com/gracenoah/tendermint/lite/errors"
+	"github.com/gracenoah/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 )
 

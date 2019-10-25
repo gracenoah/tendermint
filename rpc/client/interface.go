@@ -23,9 +23,9 @@ implementation.
 import (
 	"context"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
+	cmn "github.com/gracenoah/tendermint/libs/common"
+	ctypes "github.com/gracenoah/tendermint/rpc/core/types"
+	"github.com/gracenoah/tendermint/types"
 )
 
 // Client wraps most important rpc calls a client would make if you want to
