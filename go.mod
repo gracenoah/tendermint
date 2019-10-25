@@ -10,9 +10,9 @@ require (
 	github.com/fortytw2/leaktest v1.3.0
 	github.com/go-kit/kit v0.9.0
 	github.com/go-logfmt/logfmt v0.4.0
-	github.com/golang/protobuf v1.3.2
 	github.com/google/gofuzz v1.0.0 // indirect
 	github.com/gorilla/websocket v1.4.1
+	github.com/gracenoah/golangprotobuf v1.3.2
 	github.com/gracenoah/protobuf v1.3.1-renamed
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/libp2p/go-buffer-pool v0.0.2

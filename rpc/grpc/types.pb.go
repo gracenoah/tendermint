@@ -9,7 +9,7 @@ import (
 	fmt "fmt"
 	_ "github.com/gracenoah/protobuf/gogoproto"
 	proto "github.com/gracenoah/protobuf/proto"
-	golang_proto "github.com/golang/protobuf/proto"
+	golang_proto "github.com/gracenoah/golangprotobuf/proto"
 	types "github.com/gracenoah/tendermint/abci/types"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"

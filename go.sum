@@ -80,6 +80,8 @@ github.com/google/gofuzz v1.0.0/go.mod h1:dBl0BpW6vV/+mYPU4Po3pmUjxk6FQPldtuIdl/
 github.com/gorilla/websocket v1.4.0/go.mod h1:E7qHFY5m1UJ88s3WnNqhKjPHQ0heANvMoAMk2YaljkQ=
 github.com/gorilla/websocket v1.4.1 h1:q7AeDBpnBk8AogcD4DSag/Ukw/KV+YhzLj2bP5HvKCM=
 github.com/gorilla/websocket v1.4.1/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
+github.com/gracenoah/golangprotobuf v1.3.2 h1:YmrG3hi3VB36KG49vAdChej/UyYOqB5TXlioN7Q552s=
+github.com/gracenoah/golangprotobuf v1.3.2/go.mod h1:pEZWKVfdn1Bg2fwMOg3OJoju7GbLy7onRY2FX1lN/Rs=
 github.com/gracenoah/protobuf v1.3.1-renamed h1:D1jm267Inum0JyH3aDm3sPJ5r2FuLy9p+vzRjxsZRKI=
 github.com/gracenoah/protobuf v1.3.1-renamed/go.mod h1:9am9Km0d33iMymg3ts3/nfxhE2HWZ0Rg46OGLR/VDZ8=
 github.com/grpc-ecosystem/go-grpc-middleware v1.0.0/go.mod h1:FiyG127CGDf3tlThmgyCl78X/SZQqEOJBCDaAfeWzPs=

@@ -9,7 +9,7 @@ import (
 	github_com_gogo_protobuf_jsonpb "github.com/gracenoah/protobuf/jsonpb"
 	github_com_gogo_protobuf_proto "github.com/gracenoah/protobuf/proto"
 	proto "github.com/gracenoah/protobuf/proto"
-	golang_proto "github.com/golang/protobuf/proto"
+	golang_proto "github.com/gracenoah/golangprotobuf/proto"
 	math "math"
 	math_rand "math/rand"
 	testing "testing"
