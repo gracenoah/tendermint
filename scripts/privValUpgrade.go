@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/privval"
+	"github.com/gracenoah/tendermint/libs/log"
+	"github.com/gracenoah/tendermint/privval"
 )
 
 var (

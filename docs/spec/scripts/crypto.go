@@ -5,7 +5,7 @@ import (
 	"os"
 
 	amino "github.com/tendermint/go-amino"
-	cryptoAmino "github.com/tendermint/tendermint/crypto/encoding/amino"
+	cryptoAmino "github.com/gracenoah/tendermint/crypto/encoding/amino"
 )
 
 func main() {

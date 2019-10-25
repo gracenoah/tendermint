@@ -1,11 +1,11 @@
 package proxy
 
 import (
-	cmn "github.com/tendermint/tendermint/libs/common"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	log "github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/lite"
-	lclient "github.com/tendermint/tendermint/lite/client"
+	cmn "github.com/gracenoah/tendermint/libs/common"
+	dbm "github.com/gracenoah/tendermint/libs/db"
+	log "github.com/gracenoah/tendermint/libs/log"
+	"github.com/gracenoah/tendermint/lite"
+	lclient "github.com/gracenoah/tendermint/lite/client"
 )
 
 func NewVerifier(chainID, rootDir string, client lclient.SignStatusClient, logger log.Logger, cacheSize int) (*lite.DynamicVerifier, error) {

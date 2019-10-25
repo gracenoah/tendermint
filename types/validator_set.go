@@ -9,8 +9,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/tendermint/tendermint/crypto/merkle"
-	cmn "github.com/tendermint/tendermint/libs/common"
+	"github.com/gracenoah/tendermint/crypto/merkle"
+	cmn "github.com/gracenoah/tendermint/libs/common"
 )
 
 // MaxTotalVotingPower - the maximum allowed total voting power.

@@ -3,8 +3,8 @@ package types
 import (
 	"time"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	cmn "github.com/gracenoah/tendermint/libs/common"
+	tmtime "github.com/gracenoah/tendermint/types/time"
 )
 
 // Canonical* wraps the structs in types for amino encoding them for use in SignBytes / the Signable interface.
