@@ -3,11 +3,11 @@
 
 package types
 
-import proto "github.com/gogo/protobuf/proto"
+import proto "github.com/gracenoah/protobuf/proto"
 import golang_proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import _ "github.com/gogo/protobuf/gogoproto"
+import _ "github.com/gracenoah/protobuf/gogoproto"
 import _ "github.com/golang/protobuf/ptypes/timestamp"
 import merkle "github.com/gracenoah/tendermint/crypto/merkle"
 import common "github.com/gracenoah/tendermint/libs/common"
@@ -21,7 +21,7 @@ import (
 	grpc "google.golang.org/grpc"
 )
 
-import github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
+import github_com_gogo_protobuf_types "github.com/gracenoah/protobuf/types"
 
 import io "io"
 

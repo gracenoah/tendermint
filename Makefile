@@ -2,13 +2,13 @@ GOTOOLS = \
 	github.com/mitchellh/gox \
 	github.com/golang/dep/cmd/dep \
 	github.com/golangci/golangci-lint/cmd/golangci-lint \
-	github.com/gogo/protobuf/protoc-gen-gogo \
+	github.com/gracenoah/protobuf/protoc-gen-gogo \
 	github.com/square/certstrap
 GOBIN?=${GOPATH}/bin
 PACKAGES=$(shell go list ./...)
 OUTPUT?=build/tendermint
 
-INCLUDE = -I=. -I=${GOPATH}/src -I=${GOPATH}/src/github.com/gogo/protobuf/protobuf
+INCLUDE = -I=. -I=${GOPATH}/src -I=${GOPATH}/src/github.com/gracenoah/protobuf/protobuf
 BUILD_TAGS?='tendermint'
 BUILD_FLAGS = -ldflags "-X github.com/gracenoah/tendermint/version.GitCommit=`git rev-parse --short=8 HEAD`"
 

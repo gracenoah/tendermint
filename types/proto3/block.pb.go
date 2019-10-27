@@ -3,7 +3,7 @@
 
 package proto3
 
-import proto "github.com/gogo/protobuf/proto"
+import proto "github.com/gracenoah/protobuf/proto"
 import fmt "fmt"
 import math "math"
 

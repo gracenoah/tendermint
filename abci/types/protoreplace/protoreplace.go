@@ -13,9 +13,9 @@ import (
 )
 
 // This script replaces most `[]byte` with `data.Bytes` in a `.pb.go` file.
-// It was written before we realized we could use `gogo/protobuf` to achieve
+// It was written before we realized we could use `gracenoah/protobuf` to achieve
 // this more natively. So it's here for safe keeping in case we ever need to
-// abandon `gogo/protobuf`.
+// abandon `gracenoah/protobuf`.
 
 func main() {
 	bytePattern := regexp.MustCompile("[[][]]byte")

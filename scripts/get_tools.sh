@@ -6,7 +6,7 @@ set -e
 #
 # repos it installs:
 #   github.com/golang/dep/cmd/dep
-#   github.com/gogo/protobuf/protoc-gen-gogo
+#   github.com/gracenoah/protobuf/protoc-gen-gogo
 #   github.com/square/certstrap
 #   github.com/mitchellh/gox
 #   github.com/golangci/golangci-lint
@@ -52,7 +52,7 @@ installFromGithub() {
 installFromGithub golang/dep 22125cfaa6ddc71e145b1535d4b7ee9744fefff2 cmd/dep
 
 ######################## DEVELOPER TOOLS #####################################
-installFromGithub gogo/protobuf 61dbc136cf5d2f08d68a011382652244990a53a9 protoc-gen-gogo
+installFromGithub gracenoah/protobuf 61dbc136cf5d2f08d68a011382652244990a53a9 protoc-gen-gogo
 
 installFromGithub square/certstrap e27060a3643e814151e65b9807b6b06d169580a7
 

@@ -92,7 +92,7 @@
 
 [[projects]]
   digest = "1:95e1006e41c641abd2f365dfa0f1213c04da294e7cd5f0bf983af234b775db64"
-  name = "github.com/gogo/protobuf"
+  name = "github.com/gracenoah/protobuf"
   packages = [
     "gogoproto",
     "jsonpb",
@@ -520,10 +520,10 @@
     "github.com/go-kit/kit/metrics/discard",
     "github.com/go-kit/kit/metrics/prometheus",
     "github.com/go-logfmt/logfmt",
-    "github.com/gogo/protobuf/gogoproto",
-    "github.com/gogo/protobuf/jsonpb",
-    "github.com/gogo/protobuf/proto",
-    "github.com/gogo/protobuf/types",
+    "github.com/gracenoah/protobuf/gogoproto",
+    "github.com/gracenoah/protobuf/jsonpb",
+    "github.com/gracenoah/protobuf/proto",
+    "github.com/gracenoah/protobuf/types",
     "github.com/golang/protobuf/proto",
     "github.com/golang/protobuf/ptypes/timestamp",
     "github.com/gorilla/websocket",

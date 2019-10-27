@@ -380,7 +380,7 @@ program](https://hackerone.com/tendermint).
 - [crypto] [\#3371](https://github.com/gracenoah/tendermint/issues/3371) Copy in secp256k1 package from go-ethereum instead of importing
   go-ethereum (@silasdavis)
 - [deps] [\#3382](https://github.com/gracenoah/tendermint/issues/3382) Don't pin repos without releases
-- [deps] [\#3357](https://github.com/gracenoah/tendermint/issues/3357), [\#3389](https://github.com/tendermint/tendermint/issues/3389), [\#3392](https://github.com/tendermint/tendermint/issues/3392) Update gogo/protobuf, golang/protobuf, levigo, golang.org/x/crypto
+- [deps] [\#3357](https://github.com/gracenoah/tendermint/issues/3357), [\#3389](https://github.com/tendermint/tendermint/issues/3389), [\#3392](https://github.com/tendermint/tendermint/issues/3392) Update gracenoah/protobuf, golang/protobuf, levigo, golang.org/x/crypto
 - [libs/common] [\#3238](https://github.com/gracenoah/tendermint/issues/3238) exit with zero (0) code upon receiving SIGTERM/SIGINT
 - [libs/db] [\#3378](https://github.com/gracenoah/tendermint/issues/3378) CLevelDB#Stats now returns the following properties:
   - leveldb.num-files-at-level{n}
@@ -1868,7 +1868,7 @@ BUG FIXES:
 ## 0.13.0 (December 6, 2017)
 
 BREAKING CHANGES:
-- abci: update to v0.8 using gogo/protobuf; includes tx tags, vote info in RequestBeginBlock, data.Bytes everywhere, use int64, etc.
+- abci: update to v0.8 using gracenoah/protobuf; includes tx tags, vote info in RequestBeginBlock, data.Bytes everywhere, use int64, etc.
 - types: block heights are now `int64` everywhere
 - types & node: EventSwitch and EventCache have been replaced by EventBus and EventBuffer; event types have been overhauled
 - node: EventSwitch methods now refer to EventBus
