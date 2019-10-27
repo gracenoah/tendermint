@@ -4,11 +4,11 @@
 package types
 
 import proto "github.com/gracenoah/protobuf/proto"
-import golang_proto "github.com/golang/protobuf/proto"
+import golang_proto "github.com/gracenoah/golangprotobuf/proto"
 import fmt "fmt"
 import math "math"
 import _ "github.com/gracenoah/protobuf/gogoproto"
-import _ "github.com/golang/protobuf/ptypes/timestamp"
+import _ "github.com/gracenoah/golangprotobuf/ptypes/timestamp"
 import merkle "github.com/gracenoah/tendermint/crypto/merkle"
 import common "github.com/gracenoah/tendermint/libs/common"
 

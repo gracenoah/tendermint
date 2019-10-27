@@ -107,7 +107,7 @@
 
 [[projects]]
   digest = "1:239c4c7fd2159585454003d9be7207167970194216193a8a210b8d29576f19c9"
-  name = "github.com/golang/protobuf"
+  name = "github.com/gracenoah/golangprotobuf"
   packages = [
     "proto",
     "ptypes",
@@ -524,8 +524,8 @@
     "github.com/gracenoah/protobuf/jsonpb",
     "github.com/gracenoah/protobuf/proto",
     "github.com/gracenoah/protobuf/types",
-    "github.com/golang/protobuf/proto",
-    "github.com/golang/protobuf/ptypes/timestamp",
+    "github.com/gracenoah/golangprotobuf/proto",
+    "github.com/gracenoah/golangprotobuf/ptypes/timestamp",
     "github.com/gorilla/websocket",
     "github.com/jmhodges/levigo",
     "github.com/magiconair/properties/assert",

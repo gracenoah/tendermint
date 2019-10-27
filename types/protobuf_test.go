@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/gracenoah/golangprotobuf/proto"
 	"github.com/stretchr/testify/assert"
 
 	amino "github.com/tendermint/go-amino"

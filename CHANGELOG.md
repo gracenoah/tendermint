@@ -380,7 +380,7 @@ program](https://hackerone.com/tendermint).
 - [crypto] [\#3371](https://github.com/gracenoah/tendermint/issues/3371) Copy in secp256k1 package from go-ethereum instead of importing
   go-ethereum (@silasdavis)
 - [deps] [\#3382](https://github.com/gracenoah/tendermint/issues/3382) Don't pin repos without releases
-- [deps] [\#3357](https://github.com/gracenoah/tendermint/issues/3357), [\#3389](https://github.com/tendermint/tendermint/issues/3389), [\#3392](https://github.com/tendermint/tendermint/issues/3392) Update gracenoah/protobuf, golang/protobuf, levigo, golang.org/x/crypto
+- [deps] [\#3357](https://github.com/gracenoah/tendermint/issues/3357), [\#3389](https://github.com/tendermint/tendermint/issues/3389), [\#3392](https://github.com/tendermint/tendermint/issues/3392) Update gracenoah/protobuf, gracenoah/golangprotobuf, levigo, golang.org/x/crypto
 - [libs/common] [\#3238](https://github.com/gracenoah/tendermint/issues/3238) exit with zero (0) code upon receiving SIGTERM/SIGINT
 - [libs/db] [\#3378](https://github.com/gracenoah/tendermint/issues/3378) CLevelDB#Stats now returns the following properties:
   - leveldb.num-files-at-level{n}
@@ -1401,7 +1401,7 @@ BUG FIXES:
 IMPROVEMENTS
 - Update dependencies
     * pin all values in Gopkg.toml to version or commit
-    * update golang/protobuf to v1.1.0
+    * update gracenoah/golangprotobuf to v1.1.0
 
 ## 0.22.2
 

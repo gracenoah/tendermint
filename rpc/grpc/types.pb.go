@@ -4,7 +4,7 @@
 package core_grpc
 
 import proto "github.com/gracenoah/protobuf/proto"
-import golang_proto "github.com/golang/protobuf/proto"
+import golang_proto "github.com/gracenoah/golangprotobuf/proto"
 import fmt "fmt"
 import math "math"
 import _ "github.com/gracenoah/protobuf/gogoproto"

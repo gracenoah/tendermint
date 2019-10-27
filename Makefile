@@ -45,7 +45,7 @@ protoc_all: protoc_libs protoc_merkle protoc_abci protoc_grpc protoc_proto3types
 	## See https://stackoverflow.com/a/25518702
 	## Note the $< here is substituted for the %.proto
 	## Note the $@ here is substituted for the %.pb.go
-	protoc $(INCLUDE) $< --gogo_out=Mgoogle/protobuf/timestamp.proto=github.com/golang/protobuf/ptypes/timestamp,plugins=grpc:.
+	protoc $(INCLUDE) $< --gogo_out=Mgoogle/protobuf/timestamp.proto=github.com/gracenoah/golangprotobuf/ptypes/timestamp,plugins=grpc:.
 
 ########################################
 ### Build ABCI

@@ -27,7 +27,7 @@ function getCode() {
 	else
 		# protobuf auto adds `omitempty` to everything so code OK and empty data/log
 		# will not even show when marshalled into json
-		# apparently we can use github.com/golang/protobuf/jsonpb to do the marshalling ...
+		# apparently we can use github.com/gracenoah/golangprotobuf/jsonpb to do the marshalling ...
 		echo 0
 	fi
 }
