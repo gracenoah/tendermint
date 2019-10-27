@@ -6,10 +6,10 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	proto "github.com/tendermint/tendermint/benchmarks/proto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/p2p"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	proto "github.com/gracenoah/tendermint/benchmarks/proto"
+	"github.com/gracenoah/tendermint/crypto/ed25519"
+	"github.com/gracenoah/tendermint/p2p"
+	ctypes "github.com/gracenoah/tendermint/rpc/core/types"
 )
 
 func testNodeInfo(id p2p.ID) p2p.DefaultNodeInfo {

@@ -25,9 +25,9 @@ type Vote struct {
 }
 ```
 References:
-[#1648](https://github.com/tendermint/tendermint/issues/1648)
-[#2179](https://github.com/tendermint/tendermint/issues/2179)
-[#2226](https://github.com/tendermint/tendermint/issues/2226)
+[#1648](https://github.com/gracenoah/tendermint/issues/1648)
+[#2179](https://github.com/gracenoah/tendermint/issues/2179)
+[#2226](https://github.com/gracenoah/tendermint/issues/2226)
 
 ## Proposed Solution
 

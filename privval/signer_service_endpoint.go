@@ -5,9 +5,9 @@ import (
 	"net"
 	"time"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/types"
+	cmn "github.com/gracenoah/tendermint/libs/common"
+	"github.com/gracenoah/tendermint/libs/log"
+	"github.com/gracenoah/tendermint/types"
 )
 
 // SignerServiceEndpointOption sets an optional parameter on the SignerServiceEndpoint.

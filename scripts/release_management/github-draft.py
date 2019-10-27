@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Create a draft release on GitHub. By default in the tendermint/tendermint repo.
+# Create a draft release on GitHub. By default in the gracenoah/tendermint repo.
 # Optimized for CircleCI
 
 import argparse

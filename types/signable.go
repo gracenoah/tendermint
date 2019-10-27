@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	cmn "github.com/tendermint/tendermint/libs/common"
+	"github.com/gracenoah/tendermint/crypto/ed25519"
+	cmn "github.com/gracenoah/tendermint/libs/common"
 )
 
 var (

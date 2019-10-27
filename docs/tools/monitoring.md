@@ -3,7 +3,7 @@
 Tendermint blockchain monitoring tool; watches over one or more nodes,
 collecting and providing various statistics to the user:
 
-- [https://github.com/tendermint/tendermint/tree/master/tools/tm-monitor](https://github.com/tendermint/tendermint/tree/master/tools/tm-monitor)
+- [https://github.com/gracenoah/tendermint/tree/master/tools/tm-monitor](https://github.com/tendermint/tendermint/tree/master/tools/tm-monitor)
 
 ## Quick Start
 
@@ -13,8 +13,8 @@ Assuming your application is running in another container with the name
 `app`:
 
 ```
-docker run -it --rm -v "/tmp:/tendermint" tendermint/tendermint init
-docker run -it --rm -v "/tmp:/tendermint" -p "26657:26657" --name=tm --link=app tendermint/tendermint node --proxy_app=tcp://app:26658
+docker run -it --rm -v "/tmp:/tendermint" gracenoah/tendermint init
+docker run -it --rm -v "/tmp:/tendermint" -p "26657:26657" --name=tm --link=app gracenoah/tendermint node --proxy_app=tcp://app:26658
 
 docker run -it --rm -p "26670:26670" --link=tm tendermint/monitor tm:26657
 ```
@@ -23,8 +23,8 @@ If you don't have an application yet, but still want to try monitor out,
 use `kvstore`:
 
 ```
-docker run -it --rm -v "/tmp:/tendermint" tendermint/tendermint init
-docker run -it --rm -v "/tmp:/tendermint" -p "26657:26657" --name=tm tendermint/tendermint node --proxy_app=kvstore
+docker run -it --rm -v "/tmp:/tendermint" gracenoah/tendermint init
+docker run -it --rm -v "/tmp:/tendermint" -p "26657:26657" --name=tm gracenoah/tendermint node --proxy_app=kvstore
 ```
 
 ```

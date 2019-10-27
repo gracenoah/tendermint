@@ -2,7 +2,7 @@
 
 Thank you for considering making contributions to Tendermint and related repositories! Start by taking a look at the [coding repo](https://github.com/tendermint/coding) for overall information on repository workflow and standards.
 
-Please follow standard github best practices: fork the repo, branch from the tip of develop, make some commits, and submit a pull request to develop. See the [open issues](https://github.com/tendermint/tendermint/issues) for things we need help with!
+Please follow standard github best practices: fork the repo, branch from the tip of develop, make some commits, and submit a pull request to develop. See the [open issues](https://github.com/gracenoah/tendermint/issues) for things we need help with!
 
 Before making a pull request, please open an issue describing the
 change you would like to make. If an issue for your change already exists,
@@ -20,12 +20,12 @@ Please note that Go requires code to live under absolute paths, which complicate
 While my fork lives at `https://github.com/ebuchman/tendermint`,
 the code should never exist at  `$GOPATH/src/github.com/ebuchman/tendermint`.
 Instead, we use `git remote` to add the fork as a new remote for the original repo,
-`$GOPATH/src/github.com/tendermint/tendermint `, and do all the work there.
+`$GOPATH/src/github.com/gracenoah/tendermint `, and do all the work there.
 
 For instance, to create a fork and work on a branch of it, I would:
 
   * Create the fork on github, using the fork button.
-  * Go to the original repo checked out locally (i.e. `$GOPATH/src/github.com/tendermint/tendermint`)
+  * Go to the original repo checked out locally (i.e. `$GOPATH/src/github.com/gracenoah/tendermint`)
   * `git remote rename origin upstream`
   * `git remote add origin git@github.com:ebuchman/basecoin.git`
 
@@ -125,7 +125,7 @@ easy to reference the pull request where a change was introduced.
 - the latest state of development is on `develop`
 - `develop` must never fail `make test`
 - never --force onto `develop` (except when reverting a broken commit, which should seldom happen)
-- create a development branch either on github.com/tendermint/tendermint, or your fork (using `git remote add origin`)
+- create a development branch either on github.com/gracenoah/tendermint, or your fork (using `git remote add origin`)
 - make changes and update the `CHANGELOG_PENDING.md` to record your change
 - before submitting a pull request, run `git rebase` on top of the latest `develop`
 

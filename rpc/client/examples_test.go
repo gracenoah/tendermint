@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/rpc/client"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
+	"github.com/gracenoah/tendermint/abci/example/kvstore"
+	"github.com/gracenoah/tendermint/rpc/client"
+	ctypes "github.com/gracenoah/tendermint/rpc/core/types"
+	rpctest "github.com/gracenoah/tendermint/rpc/test"
 )
 
 func ExampleHTTP_simple() {

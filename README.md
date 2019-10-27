@@ -4,20 +4,20 @@
 [State Machines](https://en.wikipedia.org/wiki/State_machine_replication).
 Or [Blockchain](https://en.wikipedia.org/wiki/Blockchain_(database)), for short.
 
-[![version](https://img.shields.io/github/tag/tendermint/tendermint.svg)](https://github.com/tendermint/tendermint/releases/latest)
+[![version](https://img.shields.io/github/tag/gracenoah/tendermint.svg)](https://github.com/tendermint/tendermint/releases/latest)
 [![API Reference](
 https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/68747470733a2f2f676f646f632e6f72672f6769746875622e636f6d2f676f6c616e672f6764646f3f7374617475732e737667
-)](https://godoc.org/github.com/tendermint/tendermint)
+)](https://godoc.org/github.com/gracenoah/tendermint)
 [![Go version](https://img.shields.io/badge/go-1.12.0-blue.svg)](https://github.com/moovweb/gvm)
 [![riot.im](https://img.shields.io/badge/riot.im-JOIN%20CHAT-green.svg)](https://riot.im/app/#/room/#tendermint:matrix.org)
-[![license](https://img.shields.io/github/license/tendermint/tendermint.svg)](https://github.com/tendermint/tendermint/blob/master/LICENSE)
-[![](https://tokei.rs/b1/github/tendermint/tendermint?category=lines)](https://github.com/tendermint/tendermint)
+[![license](https://img.shields.io/github/license/gracenoah/tendermint.svg)](https://github.com/tendermint/tendermint/blob/master/LICENSE)
+[![](https://tokei.rs/b1/github/gracenoah/tendermint?category=lines)](https://github.com/tendermint/tendermint)
 
 
 Branch    | Tests | Coverage
 ----------|-------|----------
-master    | [![CircleCI](https://circleci.com/gh/tendermint/tendermint/tree/master.svg?style=shield)](https://circleci.com/gh/tendermint/tendermint/tree/master) | [![codecov](https://codecov.io/gh/tendermint/tendermint/branch/master/graph/badge.svg)](https://codecov.io/gh/tendermint/tendermint)
-develop   | [![CircleCI](https://circleci.com/gh/tendermint/tendermint/tree/develop.svg?style=shield)](https://circleci.com/gh/tendermint/tendermint/tree/develop) | [![codecov](https://codecov.io/gh/tendermint/tendermint/branch/develop/graph/badge.svg)](https://codecov.io/gh/tendermint/tendermint)
+master    | [![CircleCI](https://circleci.com/gh/gracenoah/tendermint/tree/master.svg?style=shield)](https://circleci.com/gh/tendermint/tendermint/tree/master) | [![codecov](https://codecov.io/gh/tendermint/tendermint/branch/master/graph/badge.svg)](https://codecov.io/gh/tendermint/tendermint)
+develop   | [![CircleCI](https://circleci.com/gh/gracenoah/tendermint/tree/develop.svg?style=shield)](https://circleci.com/gh/tendermint/tendermint/tree/develop) | [![codecov](https://codecov.io/gh/tendermint/tendermint/branch/develop/graph/badge.svg)](https://codecov.io/gh/tendermint/tendermint)
 
 Tendermint Core is Byzantine Fault Tolerant (BFT) middleware that takes a state transition machine - written in any programming language -
 and securely replicates it on many machines.
@@ -76,10 +76,10 @@ Join the larger community on the [forum](https://forum.cosmos.network/) and the 
 To learn more about the structure of the software, watch the [Developer
 Sessions](https://www.youtube.com/playlist?list=PLdQIb0qr3pnBbG5ZG-0gr3zM86_s8Rpqv)
 and read some [Architectural
-Decision Records](https://github.com/tendermint/tendermint/tree/master/docs/architecture).
+Decision Records](https://github.com/gracenoah/tendermint/tree/master/docs/architecture).
 
 Learn more by reading the code and comparing it to the
-[specification](https://github.com/tendermint/tendermint/tree/develop/docs/spec).
+[specification](https://github.com/gracenoah/tendermint/tree/develop/docs/spec).
 
 ## Versioning
 
@@ -121,7 +121,7 @@ have to start a new blockchain, or write something custom to get the old
 data into the new chain.
 
 However, any bump in the PATCH version should be compatible with existing histories
-(if not please open an [issue](https://github.com/tendermint/tendermint/issues)).
+(if not please open an [issue](https://github.com/gracenoah/tendermint/issues)).
 
 For more information on upgrading, see [UPGRADING.md](./UPGRADING.md)
 

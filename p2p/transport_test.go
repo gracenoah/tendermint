@@ -10,8 +10,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/p2p/conn"
+	"github.com/gracenoah/tendermint/crypto/ed25519"
+	"github.com/gracenoah/tendermint/p2p/conn"
 )
 
 var defaultNodeName = "host_peer"

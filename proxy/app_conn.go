@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	abcicli "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/types"
+	abcicli "github.com/gracenoah/tendermint/abci/client"
+	"github.com/gracenoah/tendermint/abci/types"
 )
 
 //----------------------------------------------------------------------------------------

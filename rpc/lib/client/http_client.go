@@ -14,9 +14,9 @@ import (
 
 	"github.com/pkg/errors"
 	amino "github.com/tendermint/go-amino"
-	cmn "github.com/tendermint/tendermint/libs/common"
+	cmn "github.com/gracenoah/tendermint/libs/common"
 
-	types "github.com/tendermint/tendermint/rpc/lib/types"
+	types "github.com/gracenoah/tendermint/rpc/lib/types"
 )
 
 const (

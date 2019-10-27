@@ -17,12 +17,12 @@ import (
 	"github.com/stretchr/testify/require"
 
 	amino "github.com/tendermint/go-amino"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/libs/log"
+	cmn "github.com/gracenoah/tendermint/libs/common"
+	"github.com/gracenoah/tendermint/libs/log"
 
-	client "github.com/tendermint/tendermint/rpc/lib/client"
-	server "github.com/tendermint/tendermint/rpc/lib/server"
-	types "github.com/tendermint/tendermint/rpc/lib/types"
+	client "github.com/gracenoah/tendermint/rpc/lib/client"
+	server "github.com/gracenoah/tendermint/rpc/lib/server"
+	types "github.com/gracenoah/tendermint/rpc/lib/types"
 )
 
 // Client and Server should work over tcp or unix sockets
